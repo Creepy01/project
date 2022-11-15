@@ -1,0 +1,91 @@
+*{font-family: 'Crimson Text', serif;}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(235, 218, 250);
+}
+
+.container{ 
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 5% 10%;
+    width: fit-content;
+    background-color: white;
+    border-radius: 12.5px  ;
+    transition: scale ease-in 0.25s;
+}
+
+#left_side{
+    width: 25rem;
+}
+
+#left_side img {
+    display: flex;
+    width:100%;
+    height: 33em;
+    border-radius: 12.5px 0  0 12.5px;
+}
+
+#right_side {
+    width:20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 32px 0 24px;
+    padding-bottom: 16px;
+}
+
+.product_name{
+    width: 8em;
+}
+.description{
+    width:15em ;
+}
+
+.price strong{
+    font-size: 32px;
+    color: rgb(2, 77, 2);
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    border: 0;
+    background-color: rgb(19, 143, 24);
+    border-radius: 12.5px;
+    padding: 0 1em;
+    margin-top: 5em ;
+    font-size: 1rem;
+    transition: background-color ease-out 0.5s;
+}
+
+button p {
+    padding-left: 0.3em ;
+    color: white;
+}
+.container:hover{
+    scale: 110%;
+}
+button:hover{
+    background-color:  rgb(9, 99, 12);
+    cursor: pointer;
+}
+@media screen and (max-width: 600px)  {
+.container{
+    flex-direction: column;
+}
+#left_side img{
+    border-radius: 12.5px 12.5px 0 0;
+    height: 20em;
+}
+.description{
+    width: 100% ;
+}
+}
