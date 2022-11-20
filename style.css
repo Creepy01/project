@@ -36,20 +36,22 @@ body{
     flex-direction: column;
     padding: 24px 32px 0 24px;
     padding-bottom: 16px;
+    margin-left: 0.98em;
 }
 
 .product_name{
-    width: 8em;
+    width: 13em;
 }
-
 .description{
     width:15em ;
+    font-size: large;
 }
 
 .price strong{
-    font-size: 32px;
+    font-size: 40px;
     color: rgb(2, 77, 2);
 }
+
 
 button{
     display: flex;
@@ -61,13 +63,13 @@ button{
     border: 0;
     background-color: rgb(19, 143, 24);
     border-radius: 12.5px;
-    padding: 0 1em;
     margin-top: 5em ;
     font-size: 1rem;
     transition: background-color ease-out 0.5s;
 }
 
 button p {
+    text-align: center;
     padding-left: 0.3em ;
     color: white;
 }
